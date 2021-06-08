@@ -1,0 +1,35 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "kekw:boxbuilder",
+            "is_spawnable": true,
+            "is_summonable": true,
+            "is_experimental": false,
+            "animations": {
+                "boxbuilder_build_event": "animation.boxbuilder_build_event"
+            },
+            "scripts": {
+                "animate": [
+                    { "boxbuilder_build_event": "query.is_alive"}
+                ]
+            }
+        },
+        "component_groups": {
+            "forrest:despawn":{
+                "minecraft:instant_despawn":{}
+            }
+        },
+        "components": {
+        },
+        "events": {
+            "forrest:boxBuildEvent": {
+                "add": {
+                    "component_groups": [
+                        "forrest:despawn"
+                    ]
+                }
+            }
+        }
+    }
+}
