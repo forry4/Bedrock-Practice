@@ -1,0 +1,15 @@
+{
+    "format_version": "1.8.0",
+    "animations": {
+      "animation.dummy_event": {
+        "timeline": {
+          "1.0": "/say whaddup",
+          "2.0": "@s forrest:dummyEvent"
+          // { "test": "is_variant", "subject": "self", "operator": "equals", "value": "0" }
+          // with defaults:
+          // { "test": "is_variant", "value": "0" }
+        },
+        "animation_length": 3.0
+      }
+    }
+  }

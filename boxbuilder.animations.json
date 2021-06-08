@@ -1,0 +1,12 @@
+{
+    "format_version": "1.8.0",
+    "animations": {
+      "animation.boxbuilder_build_event": {
+        "timeline": {
+          "1.0": "/fill ~ ~ ~ ~+9 ~+9 ~+9 wood 0 hollow",
+          "2.0": "@s forrest:boxBuildEvent"
+        },
+        "animation_length": 3.0
+      }
+    }
+  }
