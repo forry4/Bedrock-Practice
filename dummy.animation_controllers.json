@@ -1,0 +1,42 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+      "controller.animation.dummy_speaks": {
+        "initial_state": "default",
+        "states": {
+          "default": {
+            "transitions": [
+              { "dirt": "query.is_saddled" },
+              { "grass": "query.is_chested" },
+              { "wood": "query.can_climb" }
+            ]
+          },
+          "dirt": {
+            "on_entry": [
+                "/say you're holding dirt",
+                "/event entity @s forrest:sayDirtRemove"
+            ],
+            "transitions": [
+              { "default": "!query.is_saddled" }
+            ]
+          },
+          "grass": {
+            "on_entry": [
+                "/say you're holding grass"
+            ],
+            "transitions": [
+              { "default": "query.all_animations_finished" }
+            ]
+          },
+          "wood": {
+            "on_entry": [
+                "/say you're holding wood"
+            ],
+            "transitions": [
+              { "default": "query.all_animations_finished" }
+            ]
+          }
+        }
+      }
+    }
+  }
