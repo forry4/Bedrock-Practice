@@ -3,9 +3,9 @@
     "animations": {
       "animation.forrestbee_talk_event": {
         "timeline": {
-          "1.0": "/say get off me bitch",
-          "3.0": "/say u fat hoe",
-          "5.0": "/say REEEEEE"
+          "1.0": "/say get off me",
+          "3.0": "/say you're too heavy!",
+          "5.0": "/say WAAAAAA"
         },
         "animation_length": 6.0,
         "loop": true
